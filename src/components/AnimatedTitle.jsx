@@ -1,7 +1,7 @@
 import gsap from "gsap";
 import React, { useEffect, useRef } from "react";
 
-const AnimatedTitle = ({ title, containerClass }) => {
+const AnimatedTitle = ({ title, containerClass, color }) => {
   const containerRef = useRef(null);
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -30,7 +30,7 @@ const AnimatedTitle = ({ title, containerClass }) => {
         {title.split("<br />").map((line, index) => (
           <div
             key={index}
-            className="flex-center max-w-full flex-wrap px-10 gap-2 md:gap-3 text-black"
+            className={`flex-center max-w-full flex-wrap px-10 gap-2 md:gap-3 ${color}`}
           >
             {line.split(" ").map((word, i) => (
               <span

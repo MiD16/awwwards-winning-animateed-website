@@ -35,6 +35,7 @@ const About = () => {
         <AnimatedTitle
           title="Disc<b>o</b>ver the world's <br />l<b>a</b>rgest shared adventure"
           containerClass="mt-5 text-center text-4xl uppercase leading-[0.8] md:text-[6rem]"
+          color='text-black'
         />
 
         <div className="about-subtext">
